@@ -1,0 +1,89 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	color: white;
+}
+body {
+	background-color: black;
+}
+.main {
+	width: 85%;
+	margin: auto;
+}
+
+.portada {
+	height: 100vh;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	background-image: url('./public/portada.jpg');
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+.portada__content {
+	width: 50%;
+	padding-left: 1rem;
+}
+.portada__etiqueta {
+	color: gray;
+	font-size: 28px;
+	font-weight: 600;
+}
+.portada__h1 {
+	margin-top: 8px;
+	margin-bottom: 1rem;
+	font-size: 3rem;
+}
+.portada__parrafo {
+	width: 80%;
+	font-size: 1.5rem;
+	line-height: 2.5rem;
+	margin-bottom: 1rem;
+}
+.portada__button {
+	background-color: #76b900;
+	padding: 10px 16px;
+	color: black;
+}
+
+/* segunda página */
+.portada2 {
+	height: 100vh;
+	width: 100%;
+	background-image: url('./public/nvidia-dlss-video-xlrg-hero-background-bb770-d@2x.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.portada2__content {
+	width: 60%;
+	text-align: center;
+}
+.portada2__etiqueta {
+	font-size: 18px;
+	font-weight: 700;
+}
+.portada2__h2 {
+	font-size: 2.2rem;
+	font-weight: 800;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+}
+.portada2__parrafo {
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 1.3rem;
+	margin-bottom: 3rem;
+}
+.portada2__descripcion {
+	font-size: 12px;
+	color: gray;
+}
+.video {
+	width: 100%;
+}
