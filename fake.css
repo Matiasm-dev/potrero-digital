@@ -1,0 +1,147 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	color: white;
+	list-style: none;
+}
+body {
+	background-color: rgb(51, 51, 51);
+}
+.logo {
+	width: 60px;
+	aspect-ratio: initial;
+}
+.letter__logo {
+	display: none;
+}
+nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: rgb(78, 102, 240);
+	padding: 0 1rem;
+}
+.nav__ul {
+	display: flex;
+	list-style: none;
+}
+.nav__ul > li {
+	margin-right: 10px;
+}
+.contenedor__logo {
+	display: flex;
+	align-items: center;
+}
+a {
+	text-decoration: none;
+}
+aside {
+	background-color: rgb(33, 33, 128);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 1rem 0;
+	gap: 1rem;
+}
+.aside__img {
+	width: 300px;
+}
+.section__text {
+	text-align: center;
+}
+p {
+	margin: 0 1rem 1rem;
+}
+.title {
+	margin-top: 2rem;
+	margin-bottom: 1rem;
+}
+footer {
+	padding: 1rem 1rem;
+	background-color: rgb(78, 102, 240);
+}
+.footer__ul {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.footer__ul__li {
+	font-size: 16px;
+	margin: 0 1rem;
+}
+
+@media screen and (min-width: 768px) {
+	main {
+		padding: 0 2rem;
+	}
+	.letter__logo {
+		display: block;
+	}
+	.logo {
+		width: 90px;
+	}
+	aside {
+		flex-direction: row;
+		justify-content: center;
+		margin-bottom: 1rem;
+	}
+	nav {
+		padding: 0 2rem;
+	}
+	.nav__ul > li {
+		margin-right: 1rem;
+	}
+	footer {
+		padding: 1rem 2rem;
+	}
+	.footer__ul__li {
+		font-size: 18px;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	main {
+		display: flex;
+	}
+	aside {
+		flex-direction: column;
+		padding: 0 1rem;
+		margin-bottom: 0;
+	}
+	footer {
+		padding: 1rem 3rem;
+	}
+	.footer__ul {
+		justify-content: flex-start;
+	}
+}
+
+@media screen and (min-width: 1440px) {
+	.logo {
+		width: 100px;
+	}
+	nav {
+		font-size: 20px;
+		padding: 0 10rem;
+	}
+	main {
+		padding: 0 10rem;
+		min-height: calc(100vh - 80px - 100px);
+	}
+	footer {
+		padding: 1rem 10rem;
+		height: 100px;
+	}
+	.footer__ul {
+		width: 600px;
+	}
+	.footer__ul__li {
+		font-size: 20px;
+		margin-right: 2rem;
+	}
+	p {
+		font-size: 20px;
+		margin: 0 2rem 2rem 0;
+	}
+}
